@@ -1,0 +1,11 @@
+version: '2.3'
+services:
+  db:
+    image: postgres:12
+  server:
+    build: .
+    command: bash -l -c "yarn start:prod"
+    env_file:
+      - .env
+    ports:
+      - 3000:3000
