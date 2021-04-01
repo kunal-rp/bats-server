@@ -2,8 +2,8 @@
   <div class="grid-row ">
     <div class="tablet:grid-col-6 tablet:grid-offset-3 desktop:grid-col-4 desktop:grid-offset-4">
       <div class='text-center'>
-          <p>Hospital</p>
-          <p>destination tool</p>
+          <h3 class='hospital-dest-title'>Hospital</h3>
+          <h3 class='hospital-dest-title'>destination tool</h3>
           <p> Start by entering your login information below.</p>
       </div>
       <!-- <h1 class="text-center">Log in</h1> -->
@@ -21,7 +21,12 @@
           <label for="password" class="usa-label">Password</label>
           <input type="password" name="password" class="usa-input" />
         </div>
-        <button class="usa-button" type="submit">Submit</button>
+        <div class='login-submit-btn-div'>
+          <div class='button-container'>
+            <button class="usa-button" id='login-submit' type="submit">Submit</button>
+          </div>
+            
+        </div>
         <p class="text-center">or</p>
         <p class="text-center"><a href="/auth/saml/login">Log in using SAML SSO</a></p>
       </form>
