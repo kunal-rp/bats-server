@@ -16,6 +16,11 @@
         Invalid email and/or password.
       </div>
       <% } %>
+      <% if (locals.ok) { %>
+      <div class="alert alert-danger">
+        success
+      </div>
+      <% } %>
      
       <form method="post" action="/auth/local/login" class="usa-form">
         <div class="usa-form-group">
