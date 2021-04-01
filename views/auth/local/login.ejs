@@ -1,4 +1,5 @@
 <div class="grid-container login-block">
+
   <div class="grid-row ">
     <div class="tablet:grid-col-6 tablet:grid-offset-3 desktop:grid-col-4 desktop:grid-offset-4">
       <div class='text-center'>
@@ -15,6 +16,7 @@
         Invalid email and/or password.
       </div>
       <% } %>
+     
       <form method="post" action="/auth/local/login" class="usa-form">
         <div class="usa-form-group">
           <label for="username" class="usa-label">Email</label>
@@ -22,11 +24,12 @@
         </div>
         <div class="usa-form-group">
           <label for="password" class="usa-label">Password</label>
-          <input type="password" name="password" class="usa-input" />
+          <input type="password" name="password" class="usa-input" id="password" />
+          <!-- <input type="password" name="password" class=`${class_var}` /> -->
         </div>
         <div class='login-submit-btn-div'>
           <div class='button-container'>
-            <button class="login_submit usa-button" type="submit">Submit</button>
+            <button id='login_submit' class="usa-button" type="submit">Submit</button>
           </div>
             
         </div>
@@ -35,4 +38,5 @@
       </form>
     </div>
   </div>
+    <script src="/login_validations.js"></script>
 </div>

@@ -11,6 +11,7 @@ router.get('/login', (req, res) => {
 router.post('/login', (req, res, next) => {
   passport.authenticate('local', (err, user) => {
     if (err) {
+      console.log('err',err)
       if (req.accepts('html')) {
         res.render('auth/local/login', {
           // TODO: pass error?

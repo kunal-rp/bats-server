@@ -8,7 +8,7 @@
     font-size: 1.5em;
 }
 
-.login_submit{
+#login_submit{
     background-color: #DDDEE0 !important;
     width: 100%;
 
@@ -22,4 +22,8 @@
 .login-submit-btn-div{
   position: relative;
 
+}
+
+.password_error{
+    border: 2px solid red;
 }
