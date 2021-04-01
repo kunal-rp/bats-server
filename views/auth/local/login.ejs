@@ -2,8 +2,11 @@
   <div class="grid-row ">
     <div class="tablet:grid-col-6 tablet:grid-offset-3 desktop:grid-col-4 desktop:grid-offset-4">
       <div class='text-center'>
-          <h3 class='hospital-dest-title'>Hospital</h3>
-          <h3 class='hospital-dest-title'>destination tool</h3>
+        <div>
+          <h2 class='hospital-dest-title'>Hospital</h3>
+          <h2 class='hospital-dest-title'>destination tool</h3>
+        </div>
+        
           <p> Start by entering your login information below.</p>
       </div>
       <!-- <h1 class="text-center">Log in</h1> -->
@@ -15,7 +18,7 @@
       <form method="post" action="/auth/local/login" class="usa-form">
         <div class="usa-form-group">
           <label for="username" class="usa-label">Email</label>
-          <input type="email" name="username" value="<%= locals.username %>" class="usa-input" />
+          <input type="email" name="username" value="<%= locals.username %>" placeholder="name@email.com" class="usa-input" />
         </div>
         <div class="usa-form-group">
           <label for="password" class="usa-label">Password</label>
