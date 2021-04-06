@@ -24,8 +24,8 @@
      
       <form method="post" action="/auth/local/login" class="usa-form">
         <div class="usa-form-group">
-          <label for="username" class="usa-label">Email</label>
-          <input type="email" name="username" value="<%= locals.username %>" placeholder="name@email.com" class="usa-input" />
+          <label for="username" class="usa-label" id='email-label' >Email</label>
+          <input type="email" id="email" name="username" value="<%= locals.username %>" placeholder="name@email.com" class="usa-input" />
         </div>
         <div class="usa-form-group">
           <label for="password" class="usa-label">Password</label>
