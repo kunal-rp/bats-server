@@ -2,6 +2,7 @@ let login_btn = document.getElementById("login_submit");
 login_btn.addEventListener("click",checkPassword);
 let password_error_message = document.getElementById('password_error_message');
 let password_message_success = document.getElementById('password_message_success');
+let password_label = document.getElementById('password-label');
 function checkPassword(){
     let password = document.getElementById("password");
     if(password.value === ""){
@@ -13,6 +14,7 @@ function checkPassword(){
         password.classList.add('success');
         password_message_success.classList.remove('password_message');
         password_message_success.classList.add('password_message_success');
+        password_label.classList.add('password-label');
     }
 }
 
