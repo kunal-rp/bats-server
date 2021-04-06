@@ -23,6 +23,13 @@
 .password_error{
     border: 2px solid red;
 }
+.password_message{
+  display: none;
+}
+.password_message_error{
+  color:red;
+  display: inline-block;
+}
 
 .success{
      border: 2px solid #80D48D;
@@ -35,3 +42,5 @@
 .email_label_valid{
   color: blue;
 }
+
+

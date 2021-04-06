@@ -1,9 +1,13 @@
 let login_btn = document.getElementById("login_submit");
 login_btn.addEventListener("click",checkPassword);
+let password_error_message = document.getElementById('password_error_message');
 function checkPassword(){
     let password = document.getElementById("password");
-    if(password.innerHTML === ""){
+    if(password.value === ""){
         password.classList.add('password_error');
+        password_error_message.classList.remove('password_message');
+        password_error_message.classList.add('password_message_error');
+
     }
 }
 
