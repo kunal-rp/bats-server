@@ -9,12 +9,12 @@ function checkPassword(){
 
 let email = document.getElementById("email");
 let email_label = document.getElementById("email-label");
-email.addEventListener("click", checkEmail);
-email_label.addEventListener("click", checkEmail);
+email.addEventListener("input", checkEmail);
+
 function checkEmail(){
-    console.log(email.innerHTML === '')
-    if(email.innerHTML !== ""){
+    if(email.value !== ''){
         email.classList.add('email_populated');
         email_label.classList.add('email_label_valid');
     }
+  
 }
