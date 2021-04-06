@@ -12,7 +12,8 @@ let email_label = document.getElementById("email-label");
 email.addEventListener("input", checkEmail);
 
 function checkEmail(){
-    if(email.value !== ''){
+    let email_parts = email.value.split('@');
+    if(email.value !== '' && email_parts.length === 2){
         email.classList.add('email_populated');
         email_label.classList.add('email_label_valid');
     }
