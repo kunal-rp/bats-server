@@ -22,8 +22,10 @@ function checkPassword(){
         password_error_message.classList.add('password_message');
         password_message_success.classList.add('password_message_success');
         password_label.classList.add('password-label');
-
+        document.getElementById("login_submit").style.backgroundColor = null;
+        document.getElementById("login_submit").style.backgroundColor = "blue";
     }
+
 }
 
 let email = document.getElementById("email");
