@@ -10,17 +10,7 @@
         
           <p> Start by entering your login information below.</p>
       </div>
-      <!-- <h1 class="text-center">Log in</h1> -->
-      <!-- <% if (locals.unauthorized) { %>
-      <div class="alert alert-danger">
-        Invalid email and/or password.
-      </div>
-      <% } %>
-      <% if (locals.ok) { %>
-      <div class="alert alert-danger">
-        success
-      </div>
-      <% } %> -->
+
      
       <form method="post" action="/auth/local/login" class="usa-form">
         <div class="usa-form-group">
@@ -36,6 +26,17 @@
             <div>
               <h6 id='password_error_message' class='password_message'>This is a required section</h6>
               <h6 id='password_message_success' class='password_message'>Success</h6>
+                    
+                    <% if (locals.unauthorized) { %>
+                          <div class="alert alert-danger">
+                            Invalid email and/or password.
+                          </div>
+                          <% } %>
+                          <% if (locals.ok) { %>
+                          <div class="alert alert-danger">
+                            success
+                          </div>
+                          <% } %> 
             </div>
           <div class='button-container'>
             <button id='login_submit' class="usa-button" type="submit">Submit</button>
