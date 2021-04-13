@@ -353,17 +353,17 @@ class Ringdown {
   }
 
   get stop() {
-    if (!this.payload.formValidation.stop){
-      this.payload.formValidation.stop = 0
+    if (!this.payload.formValidation.stop) {
+      this.payload.formValidation.stop = 0;
     }
     return this.payload.formValidation.stop;
   }
 
   set stop(value) {
-    console.log("stop value", value);
+    console.log('stop value', value);
     if (this.stop < value) {
       this.payload.formValidation.stop = value;
-    } 
+    }
   }
 
   get missingFields() {
@@ -472,6 +472,8 @@ class Ringdown {
       end: 7,
     };
     this.stop = fieldPosition[this.currentField];
+
+    console.log('stop', this.stop, fieldPosition[this.currentField]);
 
     for (let i = 0; i < this.stop; i += 1) {
       if (fields[i]) {
